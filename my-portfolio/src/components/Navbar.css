@@ -1,0 +1,60 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #007acc;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.darkMode .navbar {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.darkMode .navbar-brand {
+  color: #4cc3ff;
+}
+
+.darkMode .navbar-links a {
+  color: #f4f4f4;
+}
+
+.darkMode .navbar-links a:hover {
+  color: #4cc3ff;
+}
